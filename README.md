@@ -6,3 +6,9 @@
 - Used to build: API, real time apps, micro-services, servers and so on.
 - Built on C++
 - Powered by Google Chrome V8 engine.
+
+# Architecture
+
+- Single-threaded
+- Non-blocking I/O operation
+- Event loop
