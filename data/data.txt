@@ -1,0 +1,1 @@
+Hello! This is me and I am learning MERN stack development. I am excited to build full-stack applications using MongoDB, Express.js, React, and Node.js.
