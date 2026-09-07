@@ -1,0 +1,20 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "- Node.js is a javascript run-time environment.\r - Run time environment: A program that runs another program.\r - With the help of node.js, we can run JS in local machine.\r - Used to build: API, real time apps, micro-services, servers and so on.\r - Built on C++\r - Powered by Google Chrome V8 engine.",
+  "homepage": "https://github.com/prajwalgrg8/Learning-MERN#readme",
+  "bugs": {
+    "url": "https://github.com/prajwalgrg8/Learning-MERN/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prajwalgrg8/Learning-MERN.git"
+  },
+  "license": "ISC",
+  "author": "Goray",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
