@@ -7,8 +7,15 @@
 - Built on C++
 - Powered by Google Chrome V8 engine.
 
-# Architecture
+## Architecture
 
 - Single-threaded
 - Non-blocking I/O operation
 - Event loop
+
+### Express.js
+
+- It is a Node.js API/Web framework.
+- Used to build API.
+- Minimalist, fast and unopinionated.
+- It simplifies the http module of node.js.
