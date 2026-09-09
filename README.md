@@ -19,3 +19,30 @@
 - Used to build API.
 - Minimalist, fast and unopinionated.
 - It simplifies the http module of node.js.
+
+#### HTTP methods
+
+- GET (Read/Fetch)
+- POST (Create)
+- PUT (Update)
+- PATCH (Partial Update)
+- DELETE (Delete)
+
+##### REST API
+
+- JSON.stringify: JS oBJECT => JSON
+- JSON.pasrse: JSON => JS Object
+
+##### Layered Architecture
+
+1. Api Layer
+    - Routes: endPoints
+    - Controller: Request/Response handling
+    - Middleware: Authentication/Authorization
+
+2. Business Service Layer
+    -Services: 
+
+3. Data Layer
+    - Models 
+    - Schemas
