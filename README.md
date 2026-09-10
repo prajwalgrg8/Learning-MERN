@@ -93,4 +93,12 @@
     - Skip: db.users.find().skip(2) - Skip first 2 users
     - Sort: db.users.find().sort({name:1}) - ascending by name
             db.users.find().sort({name:-1}) - descending by name
+
+###### Mongoose
+
+    - ODM (Object Data Modeling) of MongoDB for Node.js
+    - Create Schemas (Properties or rules of a data/entity)
+    - Validate Schemas
+    - Create models (usable form of a schema) using schemas
+    - Relationships
     

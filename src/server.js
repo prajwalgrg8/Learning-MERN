@@ -1,8 +1,12 @@
 import express from "express";
 import config from "./config/config.js";
 import userRoute from "./routes/userRoutes.js";
+ 
+import connectDB from "./config/database.js";
 
 const app = express(); //creating express instance
+
+connectDB();
 
 app.get("/", (request, response) => {
     response.send("Home");
