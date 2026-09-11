@@ -1,6 +1,7 @@
 import express from "express";
 import config from "./config/config.js";
 import userRoute from "./routes/userRoutes.js";
+import productsRoutes from "./routes/productRoutes.js";
  
 import connectDB from "./config/database.js";
 
@@ -20,7 +21,9 @@ app.get("/contact", (request, response) => {
     response.send("Contact");
 });
 
-app.use("/", userRoute); //using users route
+app.use("/api/users", userRoute); //using users route
+app.use("/api/", productsRoutes); //using products route
+
 
 
 app.listen(config.port, () => {

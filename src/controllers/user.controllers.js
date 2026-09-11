@@ -5,7 +5,7 @@ const getUsers = async (req, res) => {
     const users = await userServices.getUser;
 
     // res.send(users); //send string data
-    res.json(JSON.parse(users)); //send json data
+    res.json(users); //send json data
 
 };
 
@@ -30,4 +30,17 @@ const getUserById = async (req, res) => {
     res.json(user);
 };
 
-export default {getUsers, getFirstUser, getUserById};
+const createUser = async (req, res) => {
+    try{
+        const createdUser = await userServices.createUser();
+
+        res.json(createdUser);
+    }
+    catch(error)
+    {
+        res.status(400).json(error.message);
+    }
+    
+}
+
+export default {getUsers, getFirstUser, getUserById, createUser};

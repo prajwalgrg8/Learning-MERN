@@ -3,11 +3,13 @@ import userController from "../controllers/user.controllers.js"
 
 const router = express.Router(); //Initializing Route
 
-router.get("/users", userController.getUsers);
+router.get("/", userController.getUsers);
 
-router.get("/users/first", userController.getFirstUser);
+router.get("/first", userController.getFirstUser);
 
 //Dynamic route parameter
-router.get("users/:userId", userController.getUserById);
+router.get("/:userId", userController.getUserById);
+
+router.post("/", userController.createUser);
 
 export default router;
