@@ -1,11 +1,14 @@
 import express from "express";
 import config from "./config/config.js";
-import userRoute from "./routes/userRoutes.js";
-import productsRoutes from "./routes/productRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
  
 import connectDB from "./config/database.js";
 
 const app = express(); //creating express instance
+
+app.user(express.json()); //using this instead of body-parser
 
 connectDB();
 
@@ -21,8 +24,9 @@ app.get("/contact", (request, response) => {
     response.send("Contact");
 });
 
-app.use("/api/users", userRoute); //using users route
-app.use("/api/", productsRoutes); //using products route
+app.use("/api/auth", authRoutes); //using auth routes
+app.use("/api/users", userRoutes); //using users route
+app.use("/api/", productRoutes); //using products route
 
 
 
