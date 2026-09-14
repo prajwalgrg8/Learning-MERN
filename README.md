@@ -101,4 +101,29 @@
     - Validate Schemas
     - Create models (usable form of a schema) using schemas
     - Relationships
+
+###### JSON Web Token (JWT)
+
+    - Self verified token
+    - Tamper proof
+    - Used for both authentication and authorization
+    - Structure : Header, Payload, Signature
+
+###### Storage
+
+    1. Cookie Storage:
+    
+        - Size: 4kb
+        - Storage: Browser and Server
+        - Expiry: Cookie expiry
+
+    2. Session Storage:
+        - Size: 5mb
+        - Storage: Browser
+        - Expiry: On Tab Close
+
+    3. Local Storage:
+        - Size: 5mb
+        - Storage: Browser
+        - Expiry: Never
     
