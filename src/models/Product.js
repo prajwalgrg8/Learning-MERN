@@ -36,6 +36,12 @@ const productSchema = new mongoose.Schema({
   description: String,
   imageUrls: [String],
 
+  createdBy: {
+    type: mongoose.Schema.ObjectId,
+    ref: "User",
+    required: true,
+  }
+
 });
 
 /**
