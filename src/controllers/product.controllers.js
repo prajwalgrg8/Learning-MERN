@@ -1,4 +1,14 @@
-import productServices from "../services/product.services.js"
+import productServices from "../services/product.services.js";
+
+const getAllProducts = async (req, res) => {
+  try {
+    const products = await productServices.getProducts();
+
+    res.json(products);
+  } catch (error) {
+    res.status(400).json(error.message);
+  }
+};
 
 const createProduct = async (req, res) => {
 
@@ -14,4 +24,4 @@ const createProduct = async (req, res) => {
     
 }
 
-export default {createProduct};
+export default {createProduct, getAllProducts};

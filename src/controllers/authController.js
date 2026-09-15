@@ -37,4 +37,10 @@ const register = async (req, res) => {
     } 
 };
 
-export default {login, register};
+const logout = (req, res) => {
+    res.clearCookie("authToken");
+
+    res.json({message: "Logout successfully."});
+}
+
+export default {login, register, logout};
