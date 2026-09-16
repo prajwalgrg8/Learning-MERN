@@ -6,6 +6,11 @@ const auth = (req, res, next) => {
 
   const token = cookie?.split("="[1]); // [authToken, "values"]
 
+  if(!token)
+  {
+    res.status(401).json({ message: "Unauthorized." });
+  }
+
   try {
     //token verify
     const data = jwt.verifyToken(token);
